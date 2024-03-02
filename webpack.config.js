@@ -8,11 +8,11 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
   },
   devServer: {
-    static: path.resolve(__dirname, "dist"),
+    static: path.resolve(__dirname, "build"),
     port: 8080,
     hot: true,
   },
