@@ -26,7 +26,7 @@
     "start": "webpack serve --mode development",
     "dev": "nodemon --exec 'npm start'",
     "build": "webpack --env mode=production",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d docs"
   },
   "keywords": [],
   "author": "",
